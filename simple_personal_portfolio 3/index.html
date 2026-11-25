@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- This is the navigation bar -->
+    <header>
+        <h2>My Portfolio</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Hobbies</a>
+            <a href="#">Achievements</a>
+            <a href="#">Contact</a>
+        </nav>
+        <button id="themeButton">Dark Mode</button>
+    </header>
+
+    <!-- Home section -->
+    <section id="home" class="home">
+        <div>
+            <p>Hello everyone!</p>
+            <h1>I'm <span>Rudra</span></h1>
+            <h3>Student | Beginner Web Developer</h3>
+            <p>Welcome to my personal portfolio website. This website is about me, my skills and my work.</p>
+            <a class="button" href="#about">Know More</a>
+            <a class="button" href="#projects">My Projects</a>
+        </div>
+        <div class="profile">
+            <!-- You can replace this emoji with your own photo -->
+            <div class="avatar">R</div>
+            <p>My Profile</p>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! My name is Rudra. I am a student and I am learning web development.</p>
+        <p>I like learning new things, using computers and making small projects. My goal is to become a good developer.</p>
+        <p>My interests are technology, coding and designing websites.</p>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+        <h2>My Education</h2>
+        <div class="card">
+            <h3>School</h3>
+            <p>Jawahar Gurukul English School</p>
+            <p>Completed: 2023</p>
+        </div>
+        <div class="card">
+            <h3>College</h3>
+            <p>Bosscoder School of Technology</p>
+            <p>Course: B.Tech in CSE & AIML</p>
+            <p>Academic Year: 2026</p>
+        </div>
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <p>These are some skills I am learning. The percentages are just my own estimates.</p>
+        <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><div style="width: 70%;">70%</div></div>
+        </div>
+        <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><div style="width: 55%;">55%</div></div>
+        </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div style="width: 35%;">35%</div></div>
+        </div>
+        <div class="skill">
+            <p>Java</p>
+            <div class="bar"><div style="width: 65%;">65%</div></div>
+        </div>
+        <div class="skill">
+            <p>Teamwork</p>
+            <div class="bar"><div style="width: 70%;">70%</div></div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="card">
+            <h3>Personal Portfolio Website</h3>
+            <p>A simple website to tell people about me and my skills.</p>
+            <p><b>Technologies:</b> HTML, CSS and JavaScript</p>
+            <div class="project-picture">💻</div>
+            <a class="button" href="#contact">View Details</a>
+        </div>
+        <div class="card">
+            <h3>My First Web Page</h3>
+            <p>A basic web page made while learning HTML and CSS.</p>
+            <p><b>Technologies:</b> HTML and CSS</p>
+            <div class="project-picture">🌐</div>
+            <a class="button" href="#contact">View Details</a>
+        </div>
+    </section>
+
+    <!-- Hobbies section -->
+    <section id="hobbies">
+        <h2>My Hobbies and Interests</h2>
+        <div class="card">
+            <h3>🎵 Listening to Music</h3>
+            <p>I like listening to music in my free time.</p>
+        </div>
+        <div class="card">
+            <h3>🎮 Playing Games</h3>
+            <p>I enjoy playing games and spending time with friends.</p>
+        </div>
+        <div class="card">
+            <h3>💻 Learning Technology</h3>
+            <p>I like exploring new things related to computers and technology.</p>
+        </div>
+    </section>
+
+    <!-- Achievements section -->
+    <section id="achievements">
+        <h2>My Achievements</h2>
+        <div class="card">
+            <h3>Web Development Project</h3>
+            <p>Completed my personal portfolio website.</p>
+            <p>Year: 2026</p>
+        </div>
+        <div class="card">
+            <h3>Learning New Skills</h3>
+            <p>Practising HTML, CSS and JavaScript.</p>
+            <p>Year: 2026</p>
+        </div>
+        <p class="small-note">Add your real certificates, awards and event participation here when you have them.</p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: rudra0987@icloud.com</p>
+        <p>GitHub: <a href="https://github.com/" target="_blank">rudra0987-lang</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank">https://www.linkedin.com/in/rudra-sawarkar-313b72427/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrMqCDNsLTzaOjbmQK%2FClVQ%3D%3D</a></p>
+
+        <h3>Send Me a Message</h3>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Rudra">
+            <input type="email" id="email" placeholder="rudra0987@icloud.com">
+            <textarea id="message" placeholder="Build Your Skills"></textarea>
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>Made by Rudra | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
