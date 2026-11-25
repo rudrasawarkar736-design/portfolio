@@ -1,0 +1,203 @@
+/* Basic styling for my portfolio website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f5ff;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #253b80;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 5px;
+}
+
+nav {
+    margin: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #ffdf70;
+}
+
+button, .button {
+    background-color: #ffb703;
+    color: #222;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+}
+
+button:hover, .button:hover {
+    background-color: #ffd166;
+}
+
+section {
+    padding: 35px 8%;
+    margin: 20px auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #253b80;
+    border-bottom: 2px solid #ffb703;
+    padding-bottom: 8px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    min-height: 280px;
+}
+
+.home span {
+    color: #e76f51;
+}
+
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #dbeafe;
+    border: 4px solid #253b80;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.card {
+    background-color: #eef2ff;
+    padding: 15px;
+    margin: 12px 0;
+    border-left: 5px solid #253b80;
+    border-radius: 6px;
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.bar {
+    background-color: #ddd;
+    height: 22px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar div {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    height: 22px;
+    font-size: 14px;
+}
+
+.project-picture {
+    font-size: 45px;
+    background-color: #dbeafe;
+    padding: 15px;
+    width: 80px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 100px;
+}
+
+.small-note {
+    color: #666;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #253b80;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #171923;
+    color: #f5f5f5;
+}
+
+body.dark section {
+    background-color: #292d3e;
+}
+
+body.dark section h2 {
+    color: #ffd166;
+}
+
+body.dark .card {
+    background-color: #383e55;
+}
+
+body.dark .avatar, body.dark .project-picture {
+    background-color: #454b65;
+}
+
+/* Make the website fit on mobile screens */
+@media (max-width: 700px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 25px 5%;
+        margin: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+}
